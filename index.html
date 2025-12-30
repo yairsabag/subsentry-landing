@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubSentry - Master Your Subscriptions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .gradient-text { background: linear-gradient(135deg, #8b5cf6, #d946ef); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(51, 65, 85, 0.5); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center font-bold">S</div>
+            <span class="text-xl font-extrabold tracking-tight">SubSentry</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-medium text-sm text-slate-400">
+            <a href="#features" class="hover:text-white transition">Features</a>
+            <a href="#pricing" class="hover:text-white transition">Pricing</a>
+        </div>
+        <a href="#pricing" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-full text-sm font-bold transition">Get Pro</a>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+            Stop Overpaying for <span class="gradient-text">Subscriptions</span>
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+            The smart Chrome extension that automatically detects your payments, tracks trial periods, and saves you hundreds of dollars every year.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <button class="bg-white text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-200 transition flex items-center justify-center gap-2">
+                Add to Chrome <span class="text-sm opacity-50">Free</span>
+            </button>
+            <button class="glass px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition">
+                View Demo
+            </button>
+        </div>
+    </section>
+
+    <div class="px-6 mb-32">
+        <div class="max-w-5xl mx-auto rounded-3xl border border-slate-700 overflow-hidden shadow-2xl shadow-purple-500/20">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Dashboard Preview" class="w-full grayscale-[0.2] brightness-75">
+        </div>
+    </div>
+
+    <section id="features" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <div class="text-3xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold mb-3">Auto-Detection</h3>
+                <p class="text-slate-400">We instantly recognize subscription payments on Stripe, PayPal, and more as you browse.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <div class="text-3xl mb-4">⏰</div>
+                <h3 class="text-xl font-bold mb-3">Trial Alerts</h3>
+                <p class="text-slate-400">Never get charged for a forgotten trial again. We'll notify you before your period ends.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <div class="text-3xl mb-4">📊</div>
+                <h3 class="text-xl font-bold mb-3">Deep Insights</h3>
+                <p class="text-slate-400">See exactly where your money goes with categorized charts and annual spend estimates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-slate-400">Start for free, upgrade when you're ready to master your finances.</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-4xl mx-auto">
+            <div class="glass p-10 rounded-3xl flex-1 border-none">
+                <h3 class="text-xl font-bold mb-2">Free</h3>
+                <div class="text-4xl font-extrabold mb-6">$0</div>
+                <ul class="space-y-4 text-slate-400 mb-8">
+                    <li class="flex items-center gap-2">✅ Track up to 3 services</li>
+                    <li class="flex items-center gap-2">✅ Basic Dashboard</li>
+                    <li class="flex items-center gap-2">✅ Currency Conversion</li>
+                </ul>
+                <button class="w-full border border-slate-700 py-3 rounded-xl font-bold hover:bg-slate-800 transition">Current Plan</button>
+            </div>
+
+            <div class="p-10 rounded-3xl flex-1 border-2 border-purple-500 bg-slate-900 relative">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Most Popular</div>
+                <h3 class="text-xl font-bold mb-2">Pro</h3>
+                <div class="text-4xl font-extrabold mb-6">$4.99 <span class="text-lg font-normal text-slate-400">/mo</span></div>
+                <ul class="space-y-4 text-slate-200 mb-8">
+                    <li class="flex items-center gap-2">🚀 Unlimited Tracking</li>
+                    <li class="flex items-center gap-2">🚀 Advanced Trial Alerts</li>
+                    <li class="flex items-center gap-2">🚀 Smart Insights & Trends</li>
+                    <li class="flex items-center gap-2">🚀 Priority Support</li>
+                </ul>
+                <button class="w-full bg-purple-600 py-3 rounded-xl font-bold hover:bg-purple-700 transition shadow-lg shadow-purple-500/30">Upgrade Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-slate-800 text-slate-500 text-sm">
+        <p>&copy; 2025 SubSentry. All rights reserved. <br> Powered by Firebase & Lemon Squeezy.</p>
+    </footer>
+
+</body>
+</html>
